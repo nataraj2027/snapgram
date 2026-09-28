@@ -1,0 +1,11 @@
+.layout { display: flex; min-height: 100vh; }
+.sidebar { width: 245px; flex: none; position: sticky; top: 0; height: 100vh; padding: 24px 14px; display: flex; flex-direction: column; gap: 4px; background: var(--card); border-right: 1px solid var(--border); }
+.sidebar .logo { padding: 0 12px 22px; }
+.nav-link { display: flex; align-items: center; gap: 16px; padding: 12px 14px; border-radius: 12px; font-size: 1rem; text-align: left; transition: background .2s, transform .2s; }
+.nav-link svg { font-size: 1.4rem; flex: none; }
+.nav-link:hover { background: var(--bg); transform: translateX(3px); }
+.nav-link.active { font-weight: 700; background: var(--bg); }
+.nav-link.active svg { color: var(--accent); }
+.main { flex: 1; min-width: 0; display: flex; justify-content: center; padding: 28px 16px; }
+.col { width: 100%; max-width: 620px; } .col.wide { max-width: 960px; }
+.topbar, .bottombar { display: none; }

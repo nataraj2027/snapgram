@@ -1,0 +1,12 @@
+.profile-head { display: flex; gap: 44px; align-items: center; padding: 8px 0 28px; }
+.profile-info { flex: 1; min-width: 0; }
+.profile-top { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 6px; }
+.profile-top h2 { margin: 0; font-size: 1.6rem; }
+.stats { display: flex; gap: 32px; margin: 12px 0; }
+.bio { color: var(--muted); white-space: pre-wrap; }
+.tabs { display: flex; gap: 8px; margin: 12px 0 18px; }
+.tabs.center { justify-content: center; border-top: 1px solid var(--border); padding-top: 14px; }
+.tabs button { display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 999px; color: var(--muted); font-weight: 600; transition: all .2s; }
+.tabs button.on { background: var(--grad); color: #fff; }
+.edit { padding: 22px; display: flex; flex-direction: column; gap: 4px; }
+.avatar-pick { display: flex; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 10px; cursor: pointer; }

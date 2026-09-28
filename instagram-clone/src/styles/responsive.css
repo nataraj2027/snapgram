@@ -1,0 +1,22 @@
+/* Laptop / small desktop: hide suggestions */
+@media (max-width: 1100px) { .suggest { display: none; } }
+/* Tablet: icon-only sidebar */
+@media (max-width: 900px) {
+  .sidebar { width: 78px; align-items: center; padding: 20px 8px; }
+  .sidebar .logo { padding: 0 0 20px; } .sidebar .logo-text, .nav-link span { display: none; }
+  .nav-link { padding: 12px; } .nav-link:hover { transform: none; }
+  .profile-head { gap: 28px; }
+}
+/* Mobile: top bar + bottom tabs */
+@media (max-width: 680px) {
+  .sidebar { display: none; }
+  .main { padding: 70px 10px 76px; }
+  .topbar { position: fixed; top: 0; left: 0; right: 0; z-index: 30; height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; background: var(--card); border-bottom: 1px solid var(--border); }
+  .topbar button { font-size: 1.3rem; display: flex; }
+  .bottombar { position: fixed; bottom: 0; left: 0; right: 0; z-index: 30; height: 60px; display: flex; justify-content: space-around; align-items: center; background: var(--card); border-top: 1px solid var(--border); font-size: 1.5rem; }
+  .bottombar a { padding: 10px 16px; display: flex; color: var(--muted); } .bottombar a.active { color: var(--accent); }
+  .profile-head { flex-direction: column; text-align: center; gap: 14px; } .profile-top, .stats { justify-content: center; }
+  .avatar.xxl { width: 104px; height: 104px; } .stats { gap: 22px; }
+  .chat { flex-direction: column; height: 76vh; } .chat-list { width: 100%; max-height: 150px; border-right: 0; border-bottom: 1px solid var(--border); }
+  .reels { height: calc(100vh - 140px); } .story-img { height: 78vh; }
+}
